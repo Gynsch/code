@@ -16,7 +16,7 @@ def tenant(
     token = login(url, username, password)
 
     base_url = 'https://' + url + '/api/'
-    prepend_url = 'node/mo/uni/tn-' + tenantName
+    prepend_url = 'node/mo/uni/tn-' + tenantName + '.json'
     url = base_url + prepend_url
 
     headers = {
